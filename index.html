@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du Cavalier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jeu du Cavalier</h1>
+        <div class="controls">
+            <label for="boardSize">Taille de l'échiquier :</label>
+            <select id="boardSize">
+                <option value="6">6x6</option>
+                <option value="7">7x7</option>
+                <option value="8" selected>8x8</option>
+                <option value="9">9x9</option>
+                <option value="10">10x10</option>
+                <option value="11">11x11</option>
+                <option value="12">12x12</option>
+            </select>
+            <button id="newGame">Nouvelle partie</button>
+        </div>
+        <div class="stats">
+            <div class="moves">Mouvements : <span id="moveCount">0</span></div>
+            <div class="best-score">Meilleur score : <span id="bestScore">-</span></div>
+        </div>
+        <div class="board" id="chessboard"></div>
+        <div class="info">
+            <p>Cliquez sur une case pour déplacer le cavalier</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
